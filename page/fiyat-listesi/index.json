@@ -1,0 +1,46 @@
+{
+  "name": {
+    "tr": "Fiyat listesi",
+    "en": "Price list",
+    "ar": "قائمة الأسعار"
+  },
+  "status": "play",
+  "category": "",
+  "id": "fiyat-listesi",
+  "url": "",
+  "path": "fiyat-listesi",
+  "index": 1,
+  "icon": "sell",
+  "desing": {
+    "header": [],
+    "body": [
+      "g2ml02"
+    ],
+    "footer": []
+  },
+  "pathnext": "",
+  "description": {
+    "tr": "Hizmetlerin süre ve nihai fiyatları.",
+    "en": "Durations and final prices of our services.",
+    "ar": "مدد الخدمات وأسعارها النهائية."
+  },
+  "spot": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "desc": {},
+  "title": {
+    "tr": "Fiyat listesi",
+    "en": "Price list",
+    "ar": "قائمة الأسعار"
+  },
+  "keyword": {
+    "tr": "fiyat listesi, güzellik fiyatları",
+    "en": "price list, beauty prices",
+    "ar": "قائمة أسعار، أسعار التجميل"
+  },
+  "text": {},
+  "update": "2026-10-30T18:46:09.800Z",
+  "date": "2026-10-30"
+}

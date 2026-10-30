@@ -1,0 +1,41 @@
+{
+  "id": "misyon",
+  "name": {
+    "tr": "Misyon",
+    "en": "Mission",
+    "ar": "المهمة"
+  },
+  "description": {
+    "tr": "Misyonumuz",
+    "en": "Our mission",
+    "ar": "مهمتنا"
+  },
+  "keyword": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "path": "misyon",
+  "icon": "flag",
+  "category": "",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [],
+    "footer": []
+  },
+  "index": 0,
+  "url": "",
+  "text": {
+    "tr": "<h2>Misyonumuz</h2>\n<p>Misyonumuz, güvenli, hijyenik ve açık bilgilendirmeli estetik bakım hizmetini sakin bir ortamda sunmaktır.</p>",
+    "en": "<h2>Our mission</h2>\n<p>Our mission is to offer cosmetic care in a calm setting that is safe, hygienic and clearly explained.</p>",
+    "ar": "<h2>مهمتنا</h2>\n<p>مهمتنا تقديم خدمات العناية التجميلية في أجواء هادئة تتسم بالأمان والنظافة والشرح الواضح.</p>"
+  },
+  "title": {
+    "tr": "Misyon",
+    "en": "Mission",
+    "ar": "المهمة"
+  },
+  "date": "2026-10-30T18:26:58.372Z",
+  "update": "2026-10-30T18:46:09.883Z"
+}

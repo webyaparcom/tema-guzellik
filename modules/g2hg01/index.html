@@ -1,0 +1,168 @@
+<section class="modulex-hizgrid">
+  <div class="modulex-hizgrid-container">
+    <div class="modulex-hizgrid-header">
+      <div class="modulex-hizgrid-badge">{{badge}}</div>
+      <h2 class="modulex-hizgrid-title">{{title}}</h2>
+      <p class="modulex-hizgrid-desc">{{description}}</p>
+    </div>
+    <div class="modulex-hizgrid-body">
+      {{html}}
+    </div>
+  </div>
+</section>
+
+<style>
+  .modulex-hizgrid {
+    width: 100%;
+    padding: 72px 20px;
+    background: --bgcolor--;
+    box-sizing: border-box;
+  }
+
+  .modulex-hizgrid-container {
+    max-width: --max--;
+    margin: 0 auto;
+  }
+
+  .modulex-hizgrid-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .modulex-hizgrid-badge {
+    display: inline-block;
+    padding: 6px 18px;
+    background: --accent--;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+
+  .modulex-hizgrid-title {
+    font-size: 34px;
+    font-weight: 800;
+    color: --titlecolor--;
+    margin: 0 0 12px;
+  }
+
+  .modulex-hizgrid-desc {
+    font-size: 16px;
+    color: --textcolor--;
+    max-width: 680px;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+
+  .modulex-hizgrid-body {
+    display: grid;
+    gap: 18px;
+    grid-template-columns: repeat(--size--, 1fr);
+  }
+
+  .modulex-hizgrid-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    cursor: pointer;
+  }
+
+  .modulex-hizgrid-card {
+    background: #ffffff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(27, 58, 107, 0.08);
+    border: 1px solid rgba(27, 58, 107, 0.06);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    animation: modulexHizgridIn 0.5s ease both;
+    transition: transform 0.28s ease, box-shadow 0.28s ease;
+  }
+
+  .modulex-hizgrid-link:hover .modulex-hizgrid-card {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 32px rgba(46, 107, 255, 0.16);
+  }
+
+  @keyframes modulexHizgridIn {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .modulex-hizgrid-img {
+    aspect-ratio: --aspect-ratio--;
+    background: #eef2f7;
+    overflow: hidden;
+  }
+
+  .modulex-hizgrid-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.35s ease;
+  }
+
+  .modulex-hizgrid-link:hover .modulex-hizgrid-img img {
+    transform: scale(1.04);
+  }
+
+  .modulex-hizgrid-content {
+    padding: 16px 18px 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .modulex-hizgrid-card-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: --titlecolor--;
+    margin: 0;
+  }
+
+  .modulex-hizgrid-card-desc {
+    font-size: 13px;
+    line-height: 1.6;
+    color: --textcolor--;
+    margin: 0;
+    flex: 1;
+  }
+
+  .modulex-hizgrid-more {
+    font-size: 13px;
+    font-weight: 600;
+    color: --accent--;
+    margin-top: 4px;
+  }
+
+  @media (max-width: 1024px) {
+    .modulex-hizgrid-body {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .modulex-hizgrid {
+      padding: 48px 14px;
+    }
+
+    .modulex-hizgrid-body {
+      grid-template-columns: 1fr;
+    }
+
+    .modulex-hizgrid-title {
+      font-size: 28px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .modulex-hizgrid-card,
+    .modulex-hizgrid-img img {
+      animation: none !important;
+      transition: none !important;
+    }
+  }
+</style>

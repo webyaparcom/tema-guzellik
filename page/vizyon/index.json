@@ -1,0 +1,41 @@
+{
+  "id": "vizyon",
+  "name": {
+    "tr": "Vizyon",
+    "en": "Vision",
+    "ar": "الرؤية"
+  },
+  "description": {
+    "tr": "Vizyonumuz",
+    "en": "Our vision",
+    "ar": "رؤيتنا"
+  },
+  "keyword": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "path": "vizyon",
+  "icon": "visibility",
+  "category": "",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [],
+    "footer": []
+  },
+  "index": 1,
+  "url": "",
+  "text": {
+    "tr": "<h2>Vizyonumuz</h2>\n<p>Misafirlerinin kendini rahat ve güvende hissettiği, bölgenin güvenilir bakım stüdyosu olmak.</p>",
+    "en": "<h2>Our vision</h2>\n<p>To be the region’s trusted care studio, where every guest feels comfortable and safe.</p>",
+    "ar": "<h2>رؤيتنا</h2>\n<p>أن نكون استوديو العناية الموثوق في المنطقة، حيث تشعر كل زائرة بالراحة والأمان.</p>"
+  },
+  "title": {
+    "tr": "Vizyon",
+    "en": "Vision",
+    "ar": "الرؤية"
+  },
+  "date": "2026-10-30T18:26:58.372Z",
+  "update": "2026-10-30T18:46:09.891Z"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "kalitepolitikamiz",
+  "name": {
+    "tr": "Kalite Politikamız",
+    "en": "Quality Policy",
+    "ar": "سياسة الجودة"
+  },
+  "description": {
+    "tr": "Kalite politikamız",
+    "en": "Our quality policy",
+    "ar": "سياسة الجودة لدينا"
+  },
+  "keyword": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "path": "kalitepolitikamiz",
+  "icon": "verified",
+  "category": "",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [],
+    "footer": []
+  },
+  "index": 2,
+  "url": "",
+  "text": {
+    "tr": "<h2>Kalite Politikamız</h2>\n<p>Aletlerin her müşteriden sonra sterilizasyonu, ürün içeriklerinin açıkça paylaşımı ve randevu öncesi ön bilgilendirme kalite ilkelerimizdir.</p>",
+    "en": "<h2>Our quality policy</h2>\n<p>Sterilising tools after every guest, openly sharing product ingredients and giving pre-visit information are our quality principles.</p>",
+    "ar": "<h2>سياسة الجودة لدينا</h2>\n<p>تعقيم الأدوات بعد كل زائرة والإفصاح الواضح عن مكونات المنتجات وتقديم معلومات قبل الزيارة هي مبادئ الجودة لدينا.</p>"
+  },
+  "title": {
+    "tr": "Kalite Politikamız",
+    "en": "Quality Policy",
+    "ar": "سياسة الجودة"
+  },
+  "date": "2026-10-30T18:26:58.372Z",
+  "update": "2026-10-30T18:46:09.899Z"
+}

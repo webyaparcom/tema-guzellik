@@ -1,0 +1,40 @@
+{
+  "id": "ihm8z806xv",
+  "name": {
+    "tr": "Öncesi ve sonrası",
+    "en": "Before and after",
+    "ar": "قبل وبعد"
+  },
+  "description": {
+    "tr": "Saç ve tırnak bakımı için önce/sonra örnekleri (kurgusal görseller).",
+    "en": "Before/after examples for hair and nail care (fictional images).",
+    "ar": "أمثلة قبل وبعد للعناية بالشعر والأظافر (صور افتراضية)."
+  },
+  "keyword": {
+    "tr": "önce sonra, saç, manikür",
+    "en": "before after, hair, manicure",
+    "ar": "قبل وبعد، شعر، مانيكير"
+  },
+  "path": "oncesi-sonrasi",
+  "icon": "compare",
+  "category": "",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "6saj86",
+      "g2ca01"
+    ],
+    "footer": []
+  },
+  "index": 6,
+  "url": "",
+  "text": {},
+  "title": {
+    "tr": "Öncesi ve sonrası",
+    "en": "Before and after",
+    "ar": "قبل وبعد"
+  },
+  "date": "2026-10-30T18:46:09.837Z",
+  "update": "2026-10-30T18:46:09.847Z"
+}

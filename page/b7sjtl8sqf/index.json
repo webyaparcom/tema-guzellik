@@ -1,0 +1,40 @@
+{
+  "id": "b7sjtl8sqf",
+  "name": {
+    "tr": "Ekibimiz",
+    "en": "Our team",
+    "ar": "فريقنا"
+  },
+  "description": {
+    "tr": "Uzman ekibimizle tanışın.",
+    "en": "Meet our specialists.",
+    "ar": "تعرّفي على مختصاتنا."
+  },
+  "keyword": {
+    "tr": "ekip, uzman, stilist",
+    "en": "team, specialists, stylist",
+    "ar": "فريق، مختصات، مصففة"
+  },
+  "path": "ekibimiz",
+  "icon": "groups",
+  "category": "",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "tqt95d",
+      "g2ts01"
+    ],
+    "footer": []
+  },
+  "index": 2,
+  "url": "",
+  "text": {},
+  "title": {
+    "tr": "Ekibimiz",
+    "en": "Our team",
+    "ar": "فريقنا"
+  },
+  "date": "2026-10-30T18:46:09.807Z",
+  "update": "2026-10-30T18:46:09.816Z"
+}
