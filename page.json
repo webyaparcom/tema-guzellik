@@ -1,0 +1,270 @@
+{
+  "data": [
+    {
+      "id": "pqoz2mnidu",
+      "name": {
+        "tr": "Hizmetler",
+        "en": "Services",
+        "ar": "الخدمات"
+      },
+      "description": {
+        "tr": "Saç, tırnak, cilt bakımı, makyaj ve masaj hizmetleri.",
+        "en": "Hair, nail, skin care, make-up and massage services.",
+        "ar": "خدمات الشعر والأظافر والعناية بالبشرة والمكياج والتدليك."
+      },
+      "path": "hizmetler",
+      "icon": "spa",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "lvns9i",
+          "g2ca01"
+        ],
+        "footer": []
+      },
+      "index": 0
+    },
+    {
+      "name": {
+        "tr": "Fiyat listesi",
+        "en": "Price list",
+        "ar": "قائمة الأسعار"
+      },
+      "status": "play",
+      "id": "fiyat-listesi",
+      "path": "fiyat-listesi",
+      "category": "",
+      "url": "",
+      "index": 1,
+      "icon": "sell",
+      "desing": {
+        "header": [],
+        "body": [
+          "g2ml02"
+        ],
+        "footer": []
+      },
+      "pathnext": "",
+      "description": {
+        "tr": "Hizmetlerin süre ve nihai fiyatları.",
+        "en": "Durations and final prices of our services.",
+        "ar": "مدد الخدمات وأسعارها النهائية."
+      }
+    },
+    {
+      "id": "b7sjtl8sqf",
+      "name": {
+        "tr": "Ekibimiz",
+        "en": "Our team",
+        "ar": "فريقنا"
+      },
+      "description": {
+        "tr": "Uzman ekibimizle tanışın.",
+        "en": "Meet our specialists.",
+        "ar": "تعرّفي على مختصاتنا."
+      },
+      "path": "ekibimiz",
+      "icon": "groups",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "tqt95d",
+          "g2ts01"
+        ],
+        "footer": []
+      },
+      "index": 2
+    },
+    {
+      "id": "4nzvhfrakh",
+      "name": {
+        "tr": "Galeri",
+        "en": "Gallery",
+        "ar": "المعرض"
+      },
+      "description": {
+        "tr": "Salondan ve bakım anlarından fotoğraflar (kurgusal).",
+        "en": "Photos from the salon and care moments (fictional).",
+        "ar": "صور من الصالون ولحظات العناية (افتراضية)."
+      },
+      "path": "galeri",
+      "icon": "photo_library",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "8664io"
+        ],
+        "footer": []
+      },
+      "index": 3
+    },
+    {
+      "name": {
+        "tr": "Online randevu",
+        "en": "Online booking",
+        "ar": "الحجز عبر الإنترنت"
+      },
+      "status": "play",
+      "id": "online-randevu",
+      "path": "online-randevu",
+      "category": "",
+      "url": "",
+      "index": 4,
+      "icon": "event",
+      "desing": {
+        "header": [],
+        "body": [
+          "g2rf01"
+        ],
+        "footer": []
+      },
+      "pathnext": "",
+      "description": {
+        "tr": "Hizmet, uzman, gün ve saat seçerek online randevu (demo).",
+        "en": "Book online by choosing service, specialist, day and time (demo).",
+        "ar": "احجزي عبر الإنترنت باختيار الخدمة والمختصة واليوم والوقت (تجريبي)."
+      }
+    },
+    {
+      "id": "zpbtz1onkb",
+      "name": {
+        "tr": "Kampanyalar",
+        "en": "Offers",
+        "ar": "العروض"
+      },
+      "description": {
+        "tr": "Bakım paketleri ve kampanya fiyatları.",
+        "en": "Care packages and offer prices.",
+        "ar": "باقات العناية وأسعار العروض."
+      },
+      "path": "kampanyalar",
+      "icon": "local_offer",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "ogseiw",
+          "g2ml01"
+        ],
+        "footer": []
+      },
+      "index": 5
+    },
+    {
+      "id": "ihm8z806xv",
+      "name": {
+        "tr": "Öncesi ve sonrası",
+        "en": "Before and after",
+        "ar": "قبل وبعد"
+      },
+      "description": {
+        "tr": "Saç ve tırnak bakımı için önce/sonra örnekleri (kurgusal görseller).",
+        "en": "Before/after examples for hair and nail care (fictional images).",
+        "ar": "أمثلة قبل وبعد للعناية بالشعر والأظافر (صور افتراضية)."
+      },
+      "path": "oncesi-sonrasi",
+      "icon": "compare",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "6saj86",
+          "g2ca01"
+        ],
+        "footer": []
+      },
+      "index": 6
+    },
+    {
+      "id": "190kq2dq41",
+      "name": {
+        "tr": "Ön bilgilendirme",
+        "en": "Pre-visit information",
+        "ar": "معلومات قبل الزيارة"
+      },
+      "description": {
+        "tr": "Randevudan önce bilmeniz gerekenler: alerji, cilt testi, hamilelik, yaş sınırı ve iptal koşulları.",
+        "en": "What to know before you book: allergies, patch tests, pregnancy, age limit and cancellations.",
+        "ar": "ما يجب معرفته قبل الحجز: الحساسية واختبار البشرة والحمل والحد الأدنى للعمر وشروط الإلغاء."
+      },
+      "path": "on-bilgilendirme",
+      "icon": "fact_check",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "agx43u",
+          "t38sf3",
+          "5jeiwa"
+        ],
+        "footer": []
+      },
+      "index": 7
+    },
+    {
+      "name": {
+        "tr": "Hakkımızda",
+        "en": "About",
+        "ar": "من نحن"
+      },
+      "status": "play",
+      "id": "hakkimizda",
+      "path": "hakkimizda",
+      "category": "",
+      "url": "",
+      "index": 8,
+      "icon": "home",
+      "desing": {
+        "header": [],
+        "body": [
+          "g2in01"
+        ],
+        "footer": []
+      },
+      "pathnext": "",
+      "description": {
+        "tr": "Sedef Studio hakkında.",
+        "en": "About Sedef Studio.",
+        "ar": "عن سيدف ستوديو."
+      }
+    },
+    {
+      "name": {
+        "tr": "İletişim",
+        "en": "Contact",
+        "ar": "اتصل بنا"
+      },
+      "status": "play",
+      "id": "iletisim",
+      "path": "iletisim",
+      "category": "",
+      "url": "",
+      "index": 9,
+      "icon": "home",
+      "desing": {
+        "header": [],
+        "body": [
+          "g2ct01",
+          "g2mp01"
+        ],
+        "footer": []
+      },
+      "pathnext": "",
+      "description": {
+        "tr": "Adres, telefon ve çalışma saatleri.",
+        "en": "Address, phone and opening hours.",
+        "ar": "العنوان والهاتف وساعات العمل."
+      }
+    }
+  ],
+  "desc": []
+}

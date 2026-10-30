@@ -1,0 +1,29 @@
+{
+  "name": "Sedef Studio",
+  "short_name": "Sedef Studio",
+  "description": "Sedef Studio: saç, tırnak, cilt bakımı, makyaj ve masaj; hizmet fiyat listesi, uzman ve saat seçmeli online randevu. Yalnızca estetik amaçlı bakım. (Demo site)",
+  "start_url": "/tr/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#9B3F57",
+  "lang": "tr",
+  "icons": [
+    {
+      "src": "/img/icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/icon.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

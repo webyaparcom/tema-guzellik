@@ -1,0 +1,54 @@
+{
+  "order": false,
+  "user": false,
+  "description": {
+    "tr": "Sedef Studio: saç, tırnak, cilt bakımı, makyaj ve masaj; hizmet fiyat listesi, uzman ve saat seçmeli online randevu. Yalnızca estetik amaçlı bakım. (Demo site)",
+    "en": "Sedef Studio: hair, nails, skin care, make-up and massage; a service price list and online booking by specialist and time. Cosmetic care only. (Demo site)",
+    "ar": "سيدف ستوديو: شعر وأظافر وعناية بالبشرة ومكياج وتدليك، مع قائمة أسعار الخدمات وحجز عبر الإنترنت باختيار المختصة والوقت. عناية تجميلية فقط. (موقع تجريبي)"
+  },
+  "keyword": {
+    "tr": "güzellik salonu, saç, tırnak, makyaj, randevu, fiyat listesi",
+    "en": "beauty salon, hair, nails, make-up, appointment, price list",
+    "ar": "صالون تجميل، شعر، أظافر، مكياج، موعد، قائمة أسعار"
+  },
+  "category": "Galeri",
+  "name": "Sedef Studio",
+  "domain": "guzellik.webyapar.com",
+  "langs": {
+    "tr": true,
+    "en": true,
+    "ar": true,
+    "de": false,
+    "ru": false,
+    "es": false,
+    "fr": false,
+    "it": false,
+    "ja": false,
+    "zh": false,
+    "ko": false,
+    "pt": false
+  },
+  "logo": "logo.png",
+  "multi": false,
+  "publishMode": "static",
+  "font": {
+    "body": "inter",
+    "heading": "playfair-display",
+    "ar": {
+      "body": "ibm-plex-sans-arabic",
+      "heading": "noto-naskh-arabic"
+    }
+  },
+  "colorScheme": "auto",
+  "theme_color": "#9B3F57",
+  "seo": {
+    "noindex": true
+  },
+  "cssTokens": {
+    "--mx-radius-sm": "12px",
+    "--mx-radius-md": "20px",
+    "--mx-radius-lg": "28px",
+    "--mx-radius-xl": "999px"
+  },
+  "icon": "icon.png"
+}

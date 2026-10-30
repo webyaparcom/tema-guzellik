@@ -1,0 +1,41 @@
+{
+  "id": "190kq2dq41",
+  "name": {
+    "tr": "Ön bilgilendirme",
+    "en": "Pre-visit information",
+    "ar": "معلومات قبل الزيارة"
+  },
+  "description": {
+    "tr": "Randevudan önce bilmeniz gerekenler: alerji, cilt testi, hamilelik, yaş sınırı ve iptal koşulları.",
+    "en": "What to know before you book: allergies, patch tests, pregnancy, age limit and cancellations.",
+    "ar": "ما يجب معرفته قبل الحجز: الحساسية واختبار البشرة والحمل والحد الأدنى للعمر وشروط الإلغاء."
+  },
+  "keyword": {
+    "tr": "ön bilgilendirme, alerji, cilt testi",
+    "en": "pre-visit information, allergy, patch test",
+    "ar": "معلومات قبل الزيارة، حساسية، اختبار البشرة"
+  },
+  "path": "on-bilgilendirme",
+  "icon": "fact_check",
+  "category": "",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "agx43u",
+      "t38sf3",
+      "5jeiwa"
+    ],
+    "footer": []
+  },
+  "index": 7,
+  "url": "",
+  "text": {},
+  "title": {
+    "tr": "Ön bilgilendirme",
+    "en": "Pre-visit information",
+    "ar": "معلومات قبل الزيارة"
+  },
+  "date": "2026-10-30T18:46:09.856Z",
+  "update": "2026-10-30T18:46:09.864Z"
+}
