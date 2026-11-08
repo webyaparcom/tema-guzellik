@@ -46,7 +46,10 @@
         "logo": "logo.png",
         "color": "var(--mx-site-text, #1b1b1b)",
         "height": "84px",
-        "background-color": "var(--mx-site-bg, #ffffff)"
+        "background-color": "var(--mx-site-bg, #ffffff)",
+        "menubg": "",
+        "menutext": "#fff",
+        "menuhoverbg": "rgba(255,255,255,.18)"
       },
       "version": "1.0.0",
       "icon": "menu",
@@ -106,7 +109,8 @@
           "tr": "9|Yıllık deneyim|4|Uzman|5|Hizmet grubu",
           "en": "9|Years of experience|4|Specialists|5|Service groups",
           "ar": "9|سنوات من الخبرة|4|مختصات|5|مجموعات خدمات"
-        }
+        },
+        "stil": ""
       },
       "version": "1.1.0",
       "icon": "hero",
@@ -147,7 +151,8 @@
           "tr": "İncele",
           "en": "View",
           "ar": "عرض"
-        }
+        },
+        "accentText": "#ffffff"
       },
       "version": "1.0.0",
       "icon": "grid_view",
@@ -941,7 +946,8 @@
           "tr": "Kurgusal demo yorumlar.",
           "en": "Fictional demo reviews.",
           "ar": "تقييمات تجريبية افتراضية."
-        }
+        },
+        "accentText": "#ffffff"
       },
       "version": "1.0.0",
       "icon": "format_quote",
@@ -1026,7 +1032,8 @@
           "en": "Pre-visit information",
           "ar": "معلومات قبل الزيارة"
         },
-        "btn2Url": "on-bilgilendirme"
+        "btn2Url": "on-bilgilendirme",
+        "stil": ""
       },
       "version": "1.1.0",
       "icon": "campaign",
@@ -1044,7 +1051,10 @@
         "color": "var(--mx-site-text, #1b1b1b)",
         "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
         "minimal_design": true,
-        "social_media": false
+        "social_media": false,
+        "logo_maxh": "60px",
+        "logo_plate": false,
+        "contact_line": "auto"
       },
       "version": "1.0.0",
       "icon": "widgets",
@@ -1065,7 +1075,8 @@
           "ar": "تواصل معنا"
         },
         "margin": "30px 0px 30px 0px",
-        "linkcolor": "var(--mx-site-primary, #2563eb)"
+        "linkcolor": "var(--mx-site-primary, #2563eb)",
+        "stil": ""
       },
       "version": "1.0.0",
       "icon": "contact_mail",
@@ -1166,7 +1177,8 @@
           "tr": "Hakkımızda",
           "en": "About us",
           "ar": "من نحن"
-        }
+        },
+        "stil": ""
       },
       "version": "1.1.0",
       "icon": "business",
@@ -2908,7 +2920,8 @@
           "en": "Four specialists, each experienced in their own field; a fictional demo team.",
           "ar": "أربع مختصات، لكل منهن خبرة في مجالها؛ فريق تجريبي افتراضي."
         },
-        "linecolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)"
+        "linecolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
+        "accentText": "#ffffff"
       },
       "data": [
         {
@@ -3392,6 +3405,12 @@
             "en": "{i} / {n}",
             "ar": "{i} من {n}"
           }
+        },
+        "rizaAlindi": false,
+        "riza": {
+          "tr": "Yazılı açık rıza olmadan işlem görseli yayınlanmaz.",
+          "en": "Treatment images are not published without written explicit consent.",
+          "ar": "لا تُنشر صور الإجراءات دون موافقة خطية صريحة."
         }
       },
       "data": [
@@ -3474,7 +3493,8 @@
           "tr": "Ön bilgilendirme",
           "en": "Pre-visit information",
           "ar": "معلومات قبل الزيارة"
-        }
+        },
+        "stil": ""
       },
       "category": "module",
       "description": "Kurumsal tanıtım ve hakkımızda modülü. Firma tanıtımı, vizyon, misyon metinlerini görsel ile birlikte sunar. Ana sayfa şeridi ve temalar için varsayılan cok dilli metinler. İki kolonlu responsive tasarım, W2 animasyon ve icon desteği içerir.",
@@ -3510,7 +3530,9 @@
           "ar": "قائمة قصيرة بمعلومات قبل الزيارة."
         },
         "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
-        "linecolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)"
+        "linecolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
+        "badgebg": "#2E6BFF",
+        "badgecolor": "#ffffff"
       },
       "data": [
         {
@@ -3629,7 +3651,8 @@
           "en": "Price list",
           "ar": "قائمة الأسعار"
         },
-        "btn2Url": "fiyat-listesi"
+        "btn2Url": "fiyat-listesi",
+        "stil": ""
       },
       "category": "cta",
       "description": "Harekete geçirici çağrı (CTA) şerit modülü. Gradient arka plan üzerinde başlık, açıklama ve iki buton gösterir. Buton URL'leri dil öneki olmadan pathnext (iletisim, urunler) — site routing ekler. Çok dilli metin ve animasyonlu giriş içerir.",
@@ -3686,7 +3709,8 @@
           "tr": "Kampanyalar",
           "en": "Offers",
           "ar": "العروض"
-        }
+        },
+        "stil": ""
       },
       "category": "module",
       "description": "Kurumsal tanıtım ve hakkımızda modülü. Firma tanıtımı, vizyon, misyon metinlerini görsel ile birlikte sunar. Ana sayfa şeridi ve temalar için varsayılan cok dilli metinler. İki kolonlu responsive tasarım, W2 animasyon ve icon desteği içerir.",

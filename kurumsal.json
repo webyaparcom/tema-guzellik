@@ -163,6 +163,85 @@
         "footer": []
       },
       "index": 6
+    },
+    {
+      "id": "zpbtz1onkb",
+      "name": {
+        "tr": "Kampanyalar",
+        "en": "Offers",
+        "ar": "العروض"
+      },
+      "description": {
+        "tr": "Bakım paketleri ve kampanya fiyatları.",
+        "en": "Care packages and offer prices.",
+        "ar": "باقات العناية وأسعار العروض."
+      },
+      "path": "kampanyalar",
+      "icon": "local_offer",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "ogseiw",
+          "g2ml01"
+        ],
+        "footer": []
+      },
+      "index": 7
+    },
+    {
+      "id": "ihm8z806xv",
+      "name": {
+        "tr": "Öncesi ve sonrası",
+        "en": "Before and after",
+        "ar": "قبل وبعد"
+      },
+      "description": {
+        "tr": "Saç ve tırnak bakımı için önce/sonra örnekleri (kurgusal görseller).",
+        "en": "Before/after examples for hair and nail care (fictional images).",
+        "ar": "أمثلة قبل وبعد للعناية بالشعر والأظافر (صور افتراضية)."
+      },
+      "path": "oncesi-sonrasi",
+      "icon": "compare",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "6saj86",
+          "g2ca01"
+        ],
+        "footer": []
+      },
+      "index": 8
+    },
+    {
+      "id": "190kq2dq41",
+      "name": {
+        "tr": "Ön bilgilendirme",
+        "en": "Pre-visit information",
+        "ar": "معلومات قبل الزيارة"
+      },
+      "description": {
+        "tr": "Randevudan önce bilmeniz gerekenler: alerji, cilt testi, hamilelik, yaş sınırı ve iptal koşulları.",
+        "en": "What to know before you book: allergies, patch tests, pregnancy, age limit and cancellations.",
+        "ar": "ما يجب معرفته قبل الحجز: الحساسية واختبار البشرة والحمل والحد الأدنى للعمر وشروط الإلغاء."
+      },
+      "path": "on-bilgilendirme",
+      "icon": "fact_check",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "agx43u",
+          "t38sf3",
+          "5jeiwa"
+        ],
+        "footer": []
+      },
+      "index": 9
     }
   ]
 }
