@@ -749,5 +749,10 @@
         "ar": "مسبب الحساسية"
       }
     }
+  },
+  "veri": {
+    "statik": true,
+    "dinamik": false,
+    "kaynak": "desing/data"
   }
 }

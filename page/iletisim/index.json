@@ -9,7 +9,7 @@
   "id": "iletisim",
   "url": "",
   "path": "iletisim",
-  "index": 9,
+  "index": 6,
   "icon": "home",
   "desing": {
     "header": [],
@@ -41,6 +41,6 @@
     "en": "contact",
     "ar": "اتصل بنا"
   },
-  "update": "2026-10-30T18:46:09.871Z",
+  "update": "2026-11-05T22:24:52.911Z",
   "date": "2026-10-30"
 }

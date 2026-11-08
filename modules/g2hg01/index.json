@@ -25,10 +25,16 @@
     "linkText": {
       "tr": "İncele",
       "en": "View"
-    }
+    },
+    "accentText": "#ffffff"
   },
   "category": "page-list",
   "description": "Hizmet/sayfa grid modülü. page-list mantığı ile webmakerdata[page].data okur; üstte rozet + başlık, kartlarda görsel, başlık, kısa açıklama ve hover.",
   "version": "1.0.0",
-  "icon": "grid_view"
+  "icon": "grid_view",
+  "veri": {
+    "statik": true,
+    "dinamik": false,
+    "kaynak": "desing/data"
+  }
 }

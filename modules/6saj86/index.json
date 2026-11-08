@@ -1,6 +1,6 @@
 {
   "name": "Önce / Sonra Karşılaştırma",
-  "description": "Önce/sonra karşılaştırma kaydırıcısı: klavye erişilebilir input[type=range] (aria-label üç dilli, RTL'de «önce» tarafı sağda), yatay/dikey yön, başlangıç konumu, çiftler arası gezinme, lightbox ile büyütme. mode:\"ilerleme\" ile inşaat/dönüşüm zaman şeridi (pairs sıralı tarih etiketli kareler; aynı kaydırıcı kareler arasında gezdirir, oynat düğmesi). pairs[{before,after,title{tr,en,ar},note{},date?}]. SAĞLIK sektöründe (klinik, diş, estetik, tedavi sonuçları) KULLANILMAZ: tıbbi önce/sonra görselleri mevzuat gereği yasaktır; güzellik (tıbbi olmayan), inşaat, dekorasyon ve yenileme işleri içindir. Üç dil + RTL.",
+  "description": "Önce/sonra karşılaştırma kaydırıcısı: klavye erişilebilir input[type=range] (aria-label üç dilli, RTL'de «önce» tarafı sağda), yatay/dikey yön, başlangıç konumu, çiftler arası gezinme, lightbox ile büyütme. mode:\"ilerleme\" ile inşaat/dönüşüm zaman şeridi (pairs sıralı tarih etiketli kareler; aynı kaydırıcı kareler arasında gezdirir, oynat düğmesi). pairs[{before,after,title{tr,en,ar},note{},date?}]. SAĞLIK sektöründe (klinik, diş, estetik, tedavi sonuçları) KULLANILMAZ: tıbbi önce/sonra görselleri mevzuat gereği yasaktır; güzellik (tıbbi olmayan), inşaat, dekorasyon ve yenileme işleri içindir. rizaAlindi:false iken görseller yayınlanmaz, «riza» ibaresi görselin altında gösterilir. Üç dil + RTL.",
   "version": "1.0.0",
   "icon": "compare",
   "category": "galeri",
@@ -29,6 +29,12 @@
     "start": 50,
     "lightbox": true,
     "playMs": 1500,
+    "rizaAlindi": false,
+    "riza": {
+      "tr": "Yazılı açık rıza olmadan işlem görseli yayınlanmaz.",
+      "en": "Treatment images are not published without written explicit consent.",
+      "ar": "لا تُنشر صور الإجراءات دون موافقة خطية صريحة."
+    },
     "title": {
       "tr": "Önce ve Sonra",
       "en": "Before and After",
@@ -197,5 +203,10 @@
         "ar": "مايو 2026"
       }
     }
-  ]
+  ],
+  "veri": {
+    "statik": true,
+    "dinamik": false,
+    "kaynak": "desing/data"
+  }
 }

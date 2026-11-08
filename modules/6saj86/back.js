@@ -1,7 +1,8 @@
 /* onceki-sonra - sunucu tarafi: cift/kare verisini dile cozer, kaydirici isaretlemesini ve istemci verisini uretir.
-   Yer tutucular: osvars osclass oshead osstage osnav ostools osempty osveri.
+   Yer tutucular: osvars osclass oshead osstage osriza osnav ostools osempty osveri.
    Veri: json.data (yoksa desing.pairs) = [{before, after, title{}, note{}, date?}].
-   mode "karsilastir": her cift bir karsilastirma; mode "ilerleme": kareler (after||before) sirali zaman seridi. */
+   mode "karsilastir": her cift bir karsilastirma; mode "ilerleme": kareler (after||before) sirali zaman seridi.
+   Riza: desing.rizaAlindi true degilse gorsel yolu hic basilmaz (HTML + istemci verisi), notr yer tutucu kalir; desing.riza ibaresi her durumda gosterilir. */
 var osDes = json.desing || {};
 var osLang = json.lang || "tr";
 
@@ -33,6 +34,7 @@ var osPairs = json.data && json.data.length ? json.data : (Array.isArray(osDes.p
 var osProg = String(osDes.mode || "karsilastir") === "ilerleme";
 var osVert = String(osDes.orientation || "h") === "v";
 var osLightbox = osBool(osDes.lightbox, true);
+var osRizaVar = osBool(osDes.rizaAlindi, false);
 var osStart = parseInt(osDes.start, 10);
 if (!isFinite(osStart)) { osStart = 50; }
 osStart = Math.min(100, Math.max(0, osStart));
@@ -72,8 +74,8 @@ for (osi = 0; osi < osN; osi++) {
   var title = osPick(p.title);
   var note = osPick(p.note);
   var date = osPick(p.date);
-  var before = osImg(p.before);
-  var after = osImg(p.after);
+  var before = osRizaVar ? osImg(p.before) : "";
+  var after = osRizaVar ? osImg(p.after) : "";
   osClient.push({ before: before, after: after, title: title, date: date });
 
   var capHtml = '<figcaption class="modulex-os-cap">' +
@@ -148,6 +150,8 @@ if (osTitle || osDesc) {
     (osTitle ? '<h2 class="modulex-os-title">' + osEsc(osTitle) + "</h2>" : "") +
     (osDesc ? '<p class="modulex-os-desc">' + osEsc(osDesc) + "</p>" : "") + "</header>";
 }
+var osRizaTxt = osPick(osDes.riza);
+var osRiza = osN && osRizaTxt ? '<p class="modulex-os-riza" role="note"><span class="material-symbols-outlined" aria-hidden="true">verified_user</span><span>' + osEsc(osRizaTxt) + "</span></p>" : "";
 var osEmpty = osN ? "" : '<p class="modulex-os-empty">' + osEsc(osPick(osDes.emptyText)) + "</p>";
 
 var osLbLabels = {};
@@ -181,6 +185,7 @@ html = html.replace(/\{\{osclass\}\}/g, function () { return osClass; });
 html = html.replace(/\{\{oshead\}\}/g, function () { return osHead; });
 html = html.replace(/\{\{osstage\}\}/g, function () { return osStageHtml; });
 html = html.replace(/\{\{osnav\}\}/g, function () { return osNavHtml; });
+html = html.replace(/\{\{osriza\}\}/g, function () { return osRiza; });
 html = html.replace(/\{\{ostools\}\}/g, function () { return osToolsHtml; });
 html = html.replace(/\{\{osempty\}\}/g, function () { return osEmpty; });
 html = html.replace(/\{\{osveri\}\}/g, function () { return osVeri; });
