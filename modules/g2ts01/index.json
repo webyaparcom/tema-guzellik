@@ -1,76 +1,31 @@
 {
-  "name": "Müşteri Yorumları 1",
-  "desing": {
-    "max": "1200px",
-    "bgcolor": "#f8fafc",
-    "cardbg": "#ffffff",
-    "bordercolor": "#e2e8f0",
-    "titlecolor": "#1e293b",
-    "textcolor": "#475569",
-    "accent": "#DE6D26",
-    "starcolor": "#f59e0b",
-    "badge": {
-      "tr": "Yorumlar",
-      "en": "Testimonials"
-    },
-    "title": {
-      "tr": "Müşterilerimiz Ne Diyor?",
-      "en": "What Our Customers Say"
-    },
-    "description": {
-      "tr": "Birlikte çalıştığımız müşterilerimizin deneyimleri.",
-      "en": "Experiences from the customers we work with."
-    },
-    "accentText": "#ffffff"
-  },
-  "data": [
-    {
-      "name": "Ad Soyad",
-      "role": {
-        "tr": "Firma Sahibi",
-        "en": "Business Owner"
-      },
-      "text": {
-        "tr": "Süreç boyunca hızlı ve profesyonel bir hizmet aldık. Kesinlikle tavsiye ederiz.",
-        "en": "We received fast and professional service throughout the process. Highly recommended."
-      },
-      "rating": 5,
-      "img": ""
-    },
-    {
-      "name": "Ad Soyad",
-      "role": {
-        "tr": "Pazarlama Müdürü",
-        "en": "Marketing Manager"
-      },
-      "text": {
-        "tr": "Beklentilerimizin üzerinde bir sonuç aldık; iletişim her zaman açıktı.",
-        "en": "The result exceeded our expectations; communication was always clear."
-      },
-      "rating": 5,
-      "img": ""
-    },
-    {
-      "name": "Ad Soyad",
-      "role": {
-        "tr": "Kurucu",
-        "en": "Founder"
-      },
-      "text": {
-        "tr": "Projemiz zamanında teslim edildi ve destek süreci çok başarılıydı.",
-        "en": "Our project was delivered on time and the support process was excellent."
-      },
-      "rating": 4,
-      "img": ""
-    }
-  ],
-  "category": "testimonial",
-  "description": "Manuel müşteri yorumu kartları modülü. İsim, unvan, yıldız puanı ve yorum metnini responsive grid'de gösterir; fotoğraf yoksa baş harf avatarı kullanılır. Google'a bağımlı olmayan referans/yorum vitrini için kullanılır (otomatik çekim için google-yorumlar modülü).",
+  "name": "Yorum Alıntı — editoryal büyük alıntı",
+  "description": "testimonial-1 (kart ızgarası) / testimonial-3 (kart karuseli) görsel alternatifi: tek, çok büyük tipografik alıntı + dev tırnak işareti (vurgu rengi, RTL'de aynalanır), puan yıldızları, yazar; altta yazar avatarları seçici (WAI-ARIA sekme) + önceki/sonraki. Otomatik geçiş yok (WCAG 2.2.2); JS'siz tüm alıntılar alt alta. Görsel yoksa baş harfler. Metinler dil sözlüğü; etiketler lang.json; renkler desing + var(--mx-site-*); mantıksal CSS → RTL. Veri yoksa blok basılmaz.",
   "version": "1.0.0",
   "icon": "format_quote",
+  "category": "testimonial",
+  "subCategory": "editorial",
+  "tags": ["testimonial", "reviews", "quote", "editorial", "tabs", "rtl"],
+  "desing": {
+    "max": "980px",
+    "ust": "",
+    "baslik": "",
+    "bg": "var(--mx-site-bg, #ffffff)",
+    "text": "var(--mx-site-text, #111318)",
+    "muted": "color-mix(in srgb, var(--mx-site-text, #111318) 64%, var(--mx-site-bg, #ffffff))",
+    "kartBg": "var(--mx-site-surface, #f3f4f6)",
+    "cizgi": "color-mix(in srgb, var(--mx-site-text, #111318) 16%, transparent)",
+    "yildiz": "#f5a524",
+    "accent": "var(--mx-site-primary, #2563eb)",
+    "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318))",
+    "bgcolor": "var(--mx-site-bg, #ffffff)",
+    "color": "var(--mx-site-text, #111318)"
+  },
+  "data": [],
   "veri": {
     "statik": true,
     "dinamik": false,
-    "kaynak": "desing/data"
+    "kaynak": "data",
+    "alanlar": { "alinti": "dil sözlüğü (zorunlu)", "ad": "metin ya da dil sözlüğü (zorunlu)", "unvan": "dil sözlüğü", "img": "avatar", "puan": "1–5" }
   }
 }

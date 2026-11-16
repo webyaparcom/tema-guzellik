@@ -1,164 +1,77 @@
-<section class="modulex-team">
-  <div class="modulex-team-container">
-    <div class="modulex-team-header">
-      <div class="modulex-team-badge">{{badge}}</div>
-      <h2 class="modulex-team-title">{{title}}</h2>
-      <p class="modulex-team-desc">{{description}}</p>
-    </div>
-    <div class="modulex-team-grid">
-      {{html}}
-    </div>
+<section class="modulex-ekip-polaroid{{fbsinif}}" {{fbetiket}}>
+  <div class="modulex-ekip-polaroid-ic">
+    {{fbbas}}
+    {{fbgovde}}
   </div>
 </section>
 
 <style>
-  .modulex-team {
-    width: 100%;
-    padding: 80px 20px;
-    background: --bgcolor--;
-    box-sizing: border-box;
-  }
+  /* ekip-polaroid — Samimi, el yapımı his (pano/albüm metaforu); kurumsal soğukluk yerine aile işletmesi sıcaklığı. */
+  .modulex-ekip-polaroid { box-sizing: border-box; width: 100%; padding: --bosluk-- 20px; background: --bg--; color: --text--; font-size: 1rem; line-height: 1.6; font-family: var(--mx-font-sans, inherit); overflow-wrap: break-word; }
+  .modulex-ekip-polaroid *, .modulex-ekip-polaroid *::before, .modulex-ekip-polaroid *::after { box-sizing: border-box; }
+  /* ham/css.css «* { font-size: 14px }» kalıtımı keser — modül içinde boyut üstten gelsin (ikon yazı tipi hariç) */
+  .modulex-ekip-polaroid :where(*:not(.material-symbols-outlined)) { font-size: inherit; }
+  /* aynı «*» kuralı font-weight 400 · line-height 1.2 · font-family de basar — modül içinde kalıtım */
+  .modulex-ekip-polaroid :where(*:not(.material-symbols-outlined)) { font-weight: inherit; line-height: inherit; font-family: inherit; }
+  .modulex-ekip-polaroid :where(h2, h3, h4, p, ul, ol, li, figure, blockquote, dl, dd) { margin: 0; }
+  .modulex-ekip-polaroid :where(ul, ol) { padding: 0; list-style: none; }
+  .modulex-ekip-polaroid img { display: block; max-width: 100%; }
+  /* <img width height> öznitelik yüksekliği CSS aspect-ratio'yu ezer — sıfır özgüllükle auto (modül sınıfının height'ı yine kazanır) */
+  :where(.modulex-ekip-polaroid) img { height: auto; }
+  .modulex-ekip-polaroid [hidden] { display: none !important; }
+  .modulex-ekip-polaroid :where(a, button, summary, [data-cevir]) { cursor: pointer; }
+  .modulex-ekip-polaroid :where(a, button, summary, [tabindex]):focus-visible { outline: 3px solid --accent--; outline-offset: 3px; }
+  .modulex-ekip-polaroid-ic { max-width: --max--; margin-inline: auto; }
+  .modulex-ekip-polaroid-bas { display: grid; gap: 12px; margin-block-end: clamp(32px, 4vw, 52px); }
+  .modulex-ekip-polaroid--bassiz .modulex-ekip-polaroid-bas { display: none; }
+  .modulex-ekip-polaroid-ust { color: --accentInk--; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+  .modulex-ekip-polaroid-baslik { font-family: var(--mx-font-heading, inherit); font-size: clamp(1.8rem, 3.4vw, 2.8rem); font-weight: 750; letter-spacing: -0.025em; line-height: 1.1; }
+  .modulex-ekip-polaroid-metin { color: --muted--; font-size: 1.05rem; line-height: 1.7; }
+  .modulex-ekip-polaroid-bas { max-width: 780px; margin-inline: auto; text-align: center; justify-items: center; }
+  .modulex-ekip-polaroid-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-block-start: 8px; }
+  .modulex-ekip-polaroid-dugme { display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 12px 22px; border: 2px solid --accent--; border-radius: 999px; background: --accent--; color: --accentText--; font-weight: 700; text-decoration: none; transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease; }
+  .modulex-ekip-polaroid-dugme:hover { transform: translateY(-2px); }
+  .modulex-ekip-polaroid-dugme--ikincil { background: transparent; color: --text--; border-color: --cizgi--; }
+  .modulex-ekip-polaroid-dugme--ikincil:hover { border-color: --accent--; }
+  .modulex-ekip-polaroid-dugme .material-symbols-outlined { font-size: 20px; }
 
-  .modulex-team-container {
-    max-width: --max--;
-    margin: 0 auto;
-  }
-
-  .modulex-team-header {
-    text-align: center;
-    margin-bottom: 48px;
-  }
-
-  .modulex-team-badge {
-    display: inline-block;
-    padding: 6px 18px;
-    background: --accent--;
-    color: --accentText--; /* 31 Eki: sabit beyaz → token */
-    border-radius: 50px;
-    font-size: 13px;
-    font-weight: 600;
-    margin-bottom: 16px;
-  }
-
-  .modulex-team-title {
-    font-size: 36px;
-    font-weight: 800;
-    color: --titlecolor--;
-    margin: 0 0 12px;
-  }
-
-  .modulex-team-desc {
-    font-size: 16px;
-    color: --textcolor--;
-    max-width: 640px;
-    margin: 0 auto;
-    line-height: 1.7;
-  }
-
-  .modulex-team-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 24px;
-  }
-
-  .modulex-team-card {
-    background: --cardbg--;
-    border: 1px solid --bordercolor--;
-    border-radius: 16px;
-    padding: 28px 20px;
-    text-align: center;
-    box-sizing: border-box;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    animation: modulexTeamIn 0.5s ease both;
-  }
-
-  .modulex-team-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 14px 36px rgba(0, 0, 0, 0.1);
-  }
-
-  .modulex-team-avatar {
-    width: 108px;
-    height: 108px;
-    margin: 0 auto 16px;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 3px solid --accent--;
-    background: --bordercolor--;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .modulex-team-avatar img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-
-  .modulex-team-avatar .material-symbols-outlined {
-    font-size: 52px;
-    color: --textcolor--;
-  }
-
-  .modulex-team-name {
-    font-size: 17px;
-    font-weight: 700;
-    color: --titlecolor--;
-    margin: 0 0 4px;
-  }
-
-  .modulex-team-role {
-    font-size: 13px;
-    font-weight: 600;
-    color: --accent--;
-    margin: 0 0 10px;
-  }
-
-  .modulex-team-bio {
-    font-size: 13px;
-    line-height: 1.6;
-    color: --textcolor--;
-    margin: 0;
-  }
-
-  @keyframes modulexTeamIn {
-    from {
-      opacity: 0;
-      transform: translateY(16px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
+  .modulex-ekip-polaroid-pano { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 230px), 1fr)); gap: 40px 30px; padding-block-start: 12px; }
+  .modulex-ekip-polaroid-kart { position: relative; display: grid; align-content: start; gap: 12px; padding: 14px 14px 20px; background-color: --bg--; box-shadow: 0 16px 30px -22px color-mix(in srgb, --text-- 70%, transparent); transform: rotate(-2.2deg); transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.4s ease; }
+  .modulex-ekip-polaroid-kart:nth-child(even) { transform: rotate(1.8deg); }
+  .modulex-ekip-polaroid-kart:nth-child(3n) { transform: rotate(-0.8deg); }
+  .modulex-ekip-polaroid-kart:hover { transform: rotate(0) translateY(-6px); box-shadow: 0 26px 40px -26px color-mix(in srgb, --text-- 80%, transparent); }
+  .modulex-ekip-polaroid-bant { position: absolute; inset-block-start: -12px; inset-inline-start: 50%; width: 90px; height: 26px; margin-inline-start: -45px; background-color: color-mix(in srgb, --accent-- 35%, transparent); transform: rotate(-3deg); }
+  .modulex-ekip-polaroid-foto { width: 100%; aspect-ratio: 1; object-fit: cover; font-size: 3rem; }
+  .modulex-ekip-polaroid-alt { display: grid; gap: 2px; text-align: center; }
+  .modulex-ekip-polaroid-ad { font-family: var(--mx-font-heading, inherit); font-style: italic; font-size: 1.2rem; }
   @media (max-width: 768px) {
-    .modulex-team {
-      padding: 48px 14px;
-    }
-
-    .modulex-team-title {
-      font-size: 26px;
-    }
-
-    .modulex-team-grid {
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-      gap: 16px;
-    }
-
-    [class*="modulex"] {
-      max-width: 100%;
-      box-sizing: border-box;
-    }
+    .modulex-ekip-polaroid-pano { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 26px 14px; }
+    .modulex-ekip-polaroid-kart, .modulex-ekip-polaroid-kart:nth-child(even), .modulex-ekip-polaroid-kart:nth-child(3n) { transform: rotate(0); padding: 8px 8px 14px; }
+    .modulex-ekip-polaroid-ad { font-size: 1rem; }
+    .modulex-ekip-polaroid-unvan { font-size: 0.82rem; }
   }
+  /* img width/height öznitelikleri CSS yüksekliği olur — aspect-ratio'nun çalışması için yükseklik auto (modül kuralı ezebilir) */
+  :where(.modulex-ekip-polaroid) img { height: auto; }
+  .modulex-ekip-polaroid-foto { min-width: 0; }
+  .modulex-ekip-polaroid-bag { color: inherit; text-decoration: none; }
+  .modulex-ekip-polaroid-bag:hover { text-decoration: underline; text-underline-offset: 4px; }
+  .modulex-ekip-polaroid-harf { display: grid; place-items: center; background-color: --vurguBg--; color: --vurguText--; font-weight: 800; letter-spacing: 0.02em; }
+  .modulex-ekip-polaroid-sosyal { display: flex; flex-wrap: wrap; gap: 8px; }
+  .modulex-ekip-polaroid-slink { display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-width: 40px; min-height: 40px; padding: 0 10px; border: 1px solid --cizgi--; border-radius: 999px; color: inherit; font-size: 0.88rem; text-decoration: none; transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease; }
+  .modulex-ekip-polaroid-slink:hover { background-color: --accent--; border-color: --accent--; color: --accentText--; }
+  .modulex-ekip-polaroid-slink .material-symbols-outlined { font-size: 19px; }
+  .modulex-ekip-polaroid-syazi { overflow-wrap: anywhere; }
+  .modulex-ekip-polaroid-ad { font-size: 1.12rem; font-weight: 750; line-height: 1.3; }
+  .modulex-ekip-polaroid-unvan { color: --accentInk--; font-size: 0.92rem; font-weight: 650; }
+  .modulex-ekip-polaroid-bio { color: --muted--; font-size: 0.95rem; line-height: 1.65; }
+  .modulex-ekip-polaroid-bolum { color: --muted--; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; }
 
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-ekip-polaroid :is(.modulex-ekip-polaroid-baslik, .modulex-ekip-polaroid-ust, h3, h4, strong) { letter-spacing: 0; }
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-ekip-polaroid-baslik { line-height: 1.35; }
+  @media (max-width: 768px) {
+    .modulex-ekip-polaroid { padding-inline: 16px; }
+  }
   @media (prefers-reduced-motion: reduce) {
-    [class*="modulex"],
-    [class*="modulex"] * {
-      animation: none !important;
-      transition: none !important;
-    }
+    .modulex-ekip-polaroid *, .modulex-ekip-polaroid *::before, .modulex-ekip-polaroid *::after { animation: none !important; transition: none !important; }
   }
 </style>

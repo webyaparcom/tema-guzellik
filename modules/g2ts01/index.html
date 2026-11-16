@@ -1,174 +1,167 @@
-<section class="modulex-testi">
-  <div class="modulex-testi-container">
-    <div class="modulex-testi-header">
-      <div class="modulex-testi-badge">{{badge}}</div>
-      <h2 class="modulex-testi-title">{{title}}</h2>
-      <p class="modulex-testi-desc">{{description}}</p>
+<section class="modulex-yal{{yalsinif}}" {{yaletiket}}>
+  <div class="modulex-yal-ic">
+    <header class="modulex-yal-bas">
+      {{yalust}}
+      {{yalbaslik}}
+    </header>
+    <div class="modulex-yal-sahne">
+      <span class="modulex-yal-tirnak" aria-hidden="true"></span>
+      <div class="modulex-yal-alintilar">{{yalalintilar}}</div>
     </div>
-    <div class="modulex-testi-grid">
-      {{html}}
-    </div>
+    {{yalsecici}}
   </div>
 </section>
 
 <style>
-  .modulex-testi {
+  /* yorum-alinti — editoryal alıntı (15 Kas 2026, G4 · D17). testimonial-1 kart ızgarası, testimonial-3 kart karuselidir; bu modülde
+     tek, çok büyük tipografik alıntı + dev tırnak işareti; altta yazar avatarları seçici (sekme) ve önceki/sonraki. Otomatik geçiş yok.
+     Renkler desing'den; mantıksal CSS → RTL (tırnak işareti yön değiştirir). */
+  .modulex-yal {
+    box-sizing: border-box;
     width: 100%;
-    padding: 80px 20px;
-    background: --bgcolor--;
-    box-sizing: border-box;
+    padding: clamp(64px, 9vw, 128px) 20px;
+    background: --bg--;
+    color: --text--;
+    font-size: 1rem;
+    font-family: var(--mx-font-sans, inherit);
   }
+  .modulex-yal *,
+  .modulex-yal *::before,
+  .modulex-yal *::after { box-sizing: border-box; }
+  /* ham/css.css «* { font-size: 14px }» kalıtımı keser — modül içinde boyut üstten gelsin (ikon yazı tipi hariç) */
+  .modulex-yal :where(*:not(.material-symbols-outlined)) { font-size: inherit; }
+  .modulex-yal-ic { max-width: --max--; margin-inline: auto; }
+  .modulex-yal-bas { margin-block-end: 28px; text-align: center; }
+  .modulex-yal--bassiz .modulex-yal-bas { display: none; }
+  .modulex-yal-ust { margin: 0 0 10px; color: --accentInk--; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+  .modulex-yal-baslik { margin: 0; font-family: var(--mx-font-heading, inherit); font-size: clamp(1.4rem, 2.4vw, 2rem); font-weight: 700; letter-spacing: -0.02em; }
 
-  .modulex-testi-container {
-    max-width: --max--;
-    margin: 0 auto;
-  }
-
-  .modulex-testi-header {
-    text-align: center;
-    margin-bottom: 48px;
-  }
-
-  .modulex-testi-badge {
-    display: inline-block;
-    padding: 6px 18px;
-    background: --accent--;
-    color: --accentText--; /* 31 Eki: sabit beyaz → token */
-    border-radius: 50px;
-    font-size: 13px;
-    font-weight: 600;
-    margin-bottom: 16px;
-  }
-
-  .modulex-testi-title {
-    font-size: 36px;
-    font-weight: 800;
-    color: --titlecolor--;
-    margin: 0 0 12px;
-  }
-
-  .modulex-testi-desc {
-    font-size: 16px;
-    color: --textcolor--;
-    max-width: 640px;
-    margin: 0 auto;
-    line-height: 1.7;
-  }
-
-  .modulex-testi-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 24px;
-  }
-
-  .modulex-testi-card {
-    position: relative;
-    background: --cardbg--;
-    border: 1px solid --bordercolor--;
-    border-radius: 16px;
-    padding: 28px 24px 24px;
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-    box-sizing: border-box;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    animation: testiIn 0.5s ease both;
-  }
-
-  .modulex-testi-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 14px 36px rgba(0, 0, 0, 0.1);
-  }
-
-  @keyframes testiIn {
-    from { opacity: 0; transform: translateY(16px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-
-  .modulex-testi-quote {
+  .modulex-yal-sahne { position: relative; padding-block-start: clamp(48px, 7vw, 96px); }
+  .modulex-yal-tirnak {
     position: absolute;
-    top: 14px;
-    right: 18px;
-    font-size: 52px;
-    line-height: 1;
-    color: --accent--;
-    opacity: 0.2;
-    font-family: Georgia, serif;
-  }
-
-  .modulex-testi-stars {
-    color: --starcolor--;
-    font-size: 15px;
-    letter-spacing: 2px;
-  }
-
-  .modulex-testi-text {
-    font-size: 14px;
-    line-height: 1.75;
-    color: --textcolor--;
-    margin: 0;
-    flex: 1;
-  }
-
-  .modulex-testi-person {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    border-top: 1px solid --bordercolor--;
-    padding-top: 14px;
-  }
-
-  .modulex-testi-avatar {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
+    inset-block-start: 0;
+    inset-inline-start: 50%;
+    width: clamp(64px, 9vw, 112px);
+    height: clamp(48px, 7vw, 84px);
+    translate: -50% 0;
     background: --accent--;
-    color: --accentText--; /* 31 Eki: sabit beyaz → token */
-    display: flex;
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 48'%3E%3Cpath d='M0 48V28C0 12 8 2 24 0l2 7C17 10 13 15 13 22h11v26H0zm38 0V28c0-16 8-26 24-28l2 7c-9 3-13 8-13 15h11v26H38z'/%3E%3C/svg%3E") center / contain no-repeat;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 48'%3E%3Cpath d='M0 48V28C0 12 8 2 24 0l2 7C17 10 13 15 13 22h11v26H0zm38 0V28c0-16 8-26 24-28l2 7c-9 3-13 8-13 15h11v26H38z'/%3E%3C/svg%3E") center / contain no-repeat;
+    opacity: 0.9;
+  }
+  [dir="rtl"] .modulex-yal-tirnak { translate: 50% 0; transform: scaleX(-1); }
+  .modulex-yal-alinti { margin: 0; text-align: center; animation: modulex-yal-gel 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+  .modulex-yal-alinti[hidden] { display: none; }
+  .modulex-yal-alinti + .modulex-yal-alinti { margin-block-start: 56px; }
+  .modulex-yal-puan { display: flex; justify-content: center; gap: 2px; margin: 0 0 18px; color: --yildiz--; }
+  .modulex-yal-puan .material-symbols-outlined { font-size: 22px; font-variation-settings: "FILL" 1; }
+  .modulex-yal-metin { margin: 0; }
+  .modulex-yal-metin p {
+    margin: 0;
+    font-family: var(--mx-font-heading, inherit);
+    font-size: clamp(1.5rem, 3.4vw, 2.75rem);
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    line-height: 1.3;
+    text-wrap: balance;
+  }
+  .modulex-yal-yazar { display: inline-flex; align-items: center; gap: 14px; margin-block-start: 32px; text-align: start; }
+  .modulex-yal-avatar { width: 56px; height: 56px; border-radius: 50%; object-fit: cover; }
+  .modulex-yal-harf {
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-weight: 700;
-    flex-shrink: 0;
-    overflow: hidden;
+    background: color-mix(in srgb, --accent-- 16%, --kartBg--);
+    color: --accentInk--;
+    font-weight: 800;
   }
+  .modulex-yal-ad { display: block; font-weight: 700; }
+  .modulex-yal-unvan { display: block; color: --muted--; font-size: 0.92rem; }
 
-  .modulex-testi-avatar img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  .modulex-yal-secici { display: flex; align-items: center; justify-content: center; gap: 16px; margin-block-start: 44px; }
+  .modulex-yal--tek .modulex-yal-secici { display: none; }
+  .modulex-yal-sekmeler { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+  .modulex-yal-sekme {
+    padding: 3px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    background: transparent;
+    cursor: pointer;
+    transition: border-color 0.25s ease, transform 0.25s ease, opacity 0.25s ease;
+    opacity: 0.55;
   }
-
-  .modulex-testi-name {
-    font-size: 15px;
-    font-weight: 700;
-    color: --titlecolor--;
+  .modulex-yal-sekme:hover { opacity: 1; transform: translateY(-2px); }
+  .modulex-yal-sekme[aria-selected="true"] { border-color: --accent--; opacity: 1; }
+  .modulex-yal-sekme:focus-visible { outline: 3px solid --accent--; outline-offset: 2px; }
+  .modulex-yal-kucuk { display: flex; width: 44px; height: 44px; border-radius: 50%; object-fit: cover; font-size: 0.85rem; }
+  .modulex-yal-ok {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border: 1px solid --cizgi--;
+    border-radius: 50%;
+    background: transparent;
+    color: --text--;
+    cursor: pointer;
+    transition: background-color 0.25s ease, color 0.25s ease;
   }
+  .modulex-yal-ok:hover { background: --text--; color: --bg--; }
+  .modulex-yal-ok:focus-visible { outline: 3px solid --accent--; outline-offset: 2px; }
+  @keyframes modulex-yal-gel { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
 
-  .modulex-testi-role {
-    font-size: 12px;
-    color: --textcolor--;
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-yal-metin p,
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-yal-baslik { letter-spacing: 0; line-height: 1.6; }
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-yal-ust { letter-spacing: 0; }
+
+  @media (max-width: 1024px) {
+    .modulex-yal-metin p { font-size: clamp(1.4rem, 4vw, 2.2rem); }
   }
-
   @media (max-width: 768px) {
-    .modulex-testi {
-      padding: 48px 14px;
-    }
-
-    .modulex-testi-title {
-      font-size: 26px;
-    }
-
-    [class*="modulex"] {
-      max-width: 100%;
-      box-sizing: border-box;
-    }
+    .modulex-yal-secici { gap: 8px; }
+    .modulex-yal-ok { display: none; }
+    .modulex-yal-kucuk { width: 38px; height: 38px; }
   }
-
   @media (prefers-reduced-motion: reduce) {
-    [class*="modulex"],
-    [class*="modulex"] * {
-      animation: none !important;
-      transition: none !important;
-    }
+    .modulex-yal-alinti,
+    .modulex-yal * { animation: none !important; transition: none !important; }
   }
 </style>
+
+<script>
+  (() => {
+    const kok = document.querySelector(".modulex-yal");
+    if (!kok || kok.dataset.yalHazir) return;
+    kok.dataset.yalHazir = "1";
+    const sekmeler = [...kok.querySelectorAll(".modulex-yal-sekme")];
+    const paneller = [...kok.querySelectorAll(".modulex-yal-alinti")];
+    if (sekmeler.length < 2) return;
+    paneller.forEach((p) => { if (p.hasAttribute("data-gizli")) p.hidden = true; });
+    let etkin = 0;
+    const sec = (i, odak) => {
+      etkin = (i + sekmeler.length) % sekmeler.length;
+      sekmeler.forEach((s, j) => {
+        const secili = j === etkin;
+        s.setAttribute("aria-selected", secili ? "true" : "false");
+        s.tabIndex = secili ? 0 : -1;
+        if (paneller[j]) paneller[j].hidden = !secili;
+      });
+      if (odak) sekmeler[etkin].focus();
+    };
+    sekmeler.forEach((s, i) => {
+      s.addEventListener("click", () => sec(i, false));
+      s.addEventListener("keydown", (e) => {
+        const rtl = getComputedStyle(kok).direction === "rtl";
+        const ileri = rtl ? "ArrowLeft" : "ArrowRight";
+        const geri = rtl ? "ArrowRight" : "ArrowLeft";
+        if (e.key === ileri) { e.preventDefault(); sec(etkin + 1, true); }
+        else if (e.key === geri) { e.preventDefault(); sec(etkin - 1, true); }
+        else if (e.key === "Home") { e.preventDefault(); sec(0, true); }
+        else if (e.key === "End") { e.preventDefault(); sec(sekmeler.length - 1, true); }
+      });
+    });
+    kok.querySelectorAll(".modulex-yal-ok").forEach((d) => d.addEventListener("click", () => sec(etkin + Number(d.dataset.yon), false)));
+  })();
+</script>
